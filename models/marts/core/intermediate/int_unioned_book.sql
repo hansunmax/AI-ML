@@ -1,7 +1,7 @@
 with 
 unioned as (
     {{ dbt_utils.union_relations(
-        relations=[ref('manual_book1'), ref('manual_book2')]
+        relations=[ref('manual_book1.csv'), ref('manual_book2.csv')]
     ) }}
  
 ),
